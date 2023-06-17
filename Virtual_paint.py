@@ -35,7 +35,7 @@ def getcontours(img):
             cv2.drawContours(imgn, cnt, -1, (255, 255, 0), 3)
             peri=cv2.arcLength(cnt,True)
             approx=cv2.approxPolyDP(cnt,0.02*peri,True)
-            objcor=len(approx)
+            # objcor=len(approx)
             x,y,w,h=cv2.boundingRect(approx)
     return x+w//2,y
 

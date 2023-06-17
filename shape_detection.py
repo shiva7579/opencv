@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 
-img=cv2.imread("C:\\Users\\nepal\\OneDrive\\Desktop\\shapes.png")
+img=cv2.imread("images\\shapes.png")
 
 grayimg=cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
 blurimg=cv2.GaussianBlur(grayimg,(7,7),1)
